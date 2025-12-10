@@ -9,7 +9,6 @@ vertical_lines = []
 horizontal_lines = []
 
 for p1, p2 in zip(pts, pts[1:] + [pts[0]]):
-    print(p1, p2)
     a, b = p1
     c, d = p2
     if a == c:
