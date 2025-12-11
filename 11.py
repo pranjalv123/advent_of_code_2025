@@ -36,8 +36,6 @@ def topo_sort(g_inv):
                 topo_sorted.append(n)
                 del(g_inv[n])
                 break
-        else:
-            raise ValueError()
         for e in g[n]:
             g_inv[e].remove(n)
     return topo_sorted
